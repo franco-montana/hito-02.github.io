@@ -1,27 +1,35 @@
-import headerBg from '../assets/header-background.jpg'
+import React from 'react'
+
 
 const Header = () => {
   const headerStyle = {
-    backgroundImage: `url(${headerBg})`,
+    background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '300px',
     color: 'white',
-    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
-  }
+    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)',
+    marginBottom: '2rem',
+    position: 'relative',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  };
+
+  const contentStyle = {
+    textAlign: 'center',
+    zIndex: 1
+  };
 
   return (
-    <div style={headerStyle} className="d-flex align-items-center justify-content-center mb-4">
-      <div className="container text-center">
-        <div className="row">
-          <div className="col">
-            <h1 className="display-4 fw-bold">¡Pizzería Mamma Mía!</h1>
-            <p className="lead">¡Tenemos las mejores pizzas que podrás encontrar!</p>
-          </div>
-        </div>
+    <div style={headerStyle}>
+      <div style={contentStyle}>
+        <h1 className="display-4 fw-bold mb-3">¡Pizzería Mamma Mía!</h1>
+        <p className="lead fs-3">¡Tenemos las mejores pizzas que podrás encontrar!</p>
+        <p className="fs-5">🍕 Bienvenuto 🍕</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

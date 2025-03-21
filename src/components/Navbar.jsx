@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
+import { useCart } from '../context/CartContext'
 import { formatPrice } from '../utils/formatPrice'
 
 const Navbar = () => {
-  const total = 25000
+  const { getTotal, getCartCount } = useCart()
   const token = false
 
   return (
@@ -33,7 +34,9 @@ const Navbar = () => {
                   <Link to="/register" className="btn btn-outline-light me-2">🔐 Register</Link>
                 </>
               )}
-              <button className="btn btn-success">🛒 Total: ${formatPrice(total)}</button>
+              <Link to="/cart" className="btn btn-success">
+                🛒 Cart ({getCartCount()}) - ${formatPrice(getTotal())}
+              </Link>
             </div>
           </div>
         </div>
