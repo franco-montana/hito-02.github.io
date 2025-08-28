@@ -109,7 +109,7 @@ const RegisterPage = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="tumail@ejemplo.com"
+            placeholder="alguien@example.com"
           />
         </div>
         
@@ -123,7 +123,7 @@ const RegisterPage = () => {
             name="password"
             value={formData.password}
             onChange={handleChange}
-            placeholder="Mínimo 6 caracteres"
+            placeholder="Password"
           />
         </div>
         

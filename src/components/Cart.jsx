@@ -12,7 +12,7 @@ const Cart = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4" style={{ color: "var(--primary-color)" }}>
+      <h2 className="mb-4" style={{ color: "#2ecc71" }}>
         Carrito de Compras
       </h2>
       
@@ -78,7 +78,7 @@ const Cart = () => {
                 boxShadow: "var(--box-shadow)"
               }}>
                 <div className="card-body">
-                  <h4 className="mb-3">Resumen de compra</h4>
+                  <h4 className="mb-3">Resumen de tu compra</h4>
                   <div className="d-flex justify-content-between mb-3">
                     <span>Total:</span>
                     <strong>${formatPrice(getTotal())}</strong>
@@ -87,7 +87,7 @@ const Cart = () => {
                     className="btn w-100" 
                     style={{ backgroundColor: "var(--primary-color)", color: "white" }}
                   >
-                    Ir a Pagar
+                    Continuar al pago
                   </button>
                 </div>
               </div>

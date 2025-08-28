@@ -95,7 +95,7 @@ const LoginPage = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="tumail@ejemplo.com"
+              placeholder="alguien@example.com"
             />
           </div>
           
@@ -109,7 +109,7 @@ const LoginPage = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder="Mínimo 6 caracteres"
+              placeholder="Password"
             />
           </div>
           
@@ -142,7 +142,7 @@ const LoginPage = () => {
         <ul>
           <li><i className="fas fa-history"></i> Accede a tu historial de pedidos</li>
           <li><i className="fas fa-star"></i> Guarda tus pizzas favoritas</li>
-          <li><i className="fas fa-percentage"></i> Recibe ofertas exclusivas</li>
+          <li><i className="fas fa-percentage"></i> Recibe ofertas exclusivas para nuestros clientes</li>
           <li><i className="fas fa-truck"></i> Seguimiento de tus entregas</li>
         </ul>
       </div>

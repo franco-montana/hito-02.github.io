@@ -8,7 +8,7 @@ const Home = () => {
     <>
     <Header />
     <div className="container mt-5">
-      <h2 className="mb-4 text-center">Nuestras Pizzas</h2>
+      <h2 className="mb-4 text-center">ESPECIALIDADES DE LA CASA</h2>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {pizzas.map(pizza => (
           <div key={pizza.id} className="col">

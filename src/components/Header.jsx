@@ -24,9 +24,8 @@ const Header = () => {
   return (
     <div style={headerStyle}>
       <div style={contentStyle}>
-        <h1 className="display-4 fw-bold mb-3">¡Pizzería Mamma Mía!</h1>
-        <p className="lead fs-3">¡Tenemos las mejores pizzas que podrás encontrar!</p>
-        <p className="fs-5">🍕 Bienvenuto 🍕</p>
+        <h1 className="display-4 fw-bold mb-3">¡L'ANTICA PIZZA!</h1>
+        <p className="fs-5">🍕 BIENVENUTO A LA FAMIGLIA🍕</p>
       </div>
     </div>
   );
